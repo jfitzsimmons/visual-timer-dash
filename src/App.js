@@ -19,7 +19,7 @@ import "./App.scss";
 if (firebase.apps.length === 0) {
   firebase.initializeApp(fbDbRestApiconfig);
 }
-
+/** 
 const uiConfig = {
   callbacks: {
     signInSuccessWithAuthResult: function (authResult, redirectUrl) {
@@ -28,7 +28,7 @@ const uiConfig = {
   },
   signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
 };
-
+*/
 export function SignInScreen() {
   return (
     <div className="fade_in2">
