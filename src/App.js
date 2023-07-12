@@ -11,7 +11,7 @@ import { Weather } from "./components/weather/Weather";
 import Timer from "./components/Timer";
 import Coin from "./components/Coin";
 import { fbDbRestApiconfig } from "./utils/helpers";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+// testjpf replace import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "./App.scss";
@@ -33,7 +33,12 @@ export function SignInScreen() {
   return (
     <div className="fade_in2">
       <p>Please sign-in to access weather information:</p>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      {/**
+      <StyledFirebaseAuth
+        uiConfig={uiConfig}
+        firebaseAuth={firebase.auth()}
+      />{" "}
+  */}
     </div>
   );
 }
