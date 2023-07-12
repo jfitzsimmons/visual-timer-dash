@@ -3,7 +3,6 @@
   "version": "3.0.0",
   "private": true,
   "dependencies": {
-    "@netlify/functions": "^1.0.0",
     "api": "^4.4.0",
     "firebase": "^9.8.1",
     "firebase-admin": "^10.2.0",
@@ -29,7 +28,7 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "dev": "netlify dev",
+    "dev": "testjpf todo ??? dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,7 +45,6 @@
   ],
   "devDependencies": {
     "eslint-plugin-prettier": "^4.0.0",
-    "netlify-cli": "^12.5.0",
     "prettier": "2.6.2"
   }
 }
