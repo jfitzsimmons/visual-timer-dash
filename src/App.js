@@ -7,7 +7,7 @@
  */
 
 import React, { useState, useEffect } from "react";
-import { Weather } from "./components/weather/Weather";
+// import { Weather } from "./components/weather/Weather";
 import Timer from "./components/Timer";
 import Coin from "./components/Coin";
 import { fbDbRestApiconfig } from "./utils/helpers";
