@@ -7,11 +7,11 @@
  */
 
 import React, { useState, useEffect } from "react";
-import { Weather } from "./components/weather/Weather";
+// import { Weather } from "./components/weather/Weather";
 import Timer from "./components/Timer";
 import Coin from "./components/Coin";
 import { fbDbRestApiconfig } from "./utils/helpers";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+// testjpf replace import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "./App.scss";
@@ -19,7 +19,7 @@ import "./App.scss";
 if (firebase.apps.length === 0) {
   firebase.initializeApp(fbDbRestApiconfig);
 }
-
+/** 
 const uiConfig = {
   callbacks: {
     signInSuccessWithAuthResult: function (authResult, redirectUrl) {
@@ -28,12 +28,17 @@ const uiConfig = {
   },
   signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
 };
-
+*/
 export function SignInScreen() {
   return (
     <div className="fade_in2">
       <p>Please sign-in to access weather information:</p>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      {/**
+      <StyledFirebaseAuth
+        uiConfig={uiConfig}
+        firebaseAuth={firebase.auth()}
+      />{" "}
+  */}
     </div>
   );
 }
@@ -101,7 +106,7 @@ function App() {
             <button className="sign_out bold" onClick={() => signOut()}>
               log out
             </button>
-            <Weather userToken={userToken} />
+            {/**  <Weather userToken={userToken} />*/}
           </>
         ))}
     </div>
