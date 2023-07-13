@@ -28,7 +28,7 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "dev": "testjpf todo ??? dev",
+    "dev": "firebase serve",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

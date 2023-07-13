@@ -106,7 +106,7 @@ function App() {
             <button className="sign_out bold" onClick={() => signOut()}>
               log out
             </button>
-            <Weather userToken={userToken} />
+            {/**  <Weather userToken={userToken} />*/}
           </>
         ))}
     </div>
